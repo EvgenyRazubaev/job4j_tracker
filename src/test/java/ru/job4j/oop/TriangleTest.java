@@ -29,7 +29,7 @@ public class TriangleTest {
     }
 
     @Test
-    public void when000and300and030Then9() {
+    public void when000and300and030Then4dot5() {
         Point a = new Point(0, 0, 0);
         Point b = new Point(3, 0, 0);
         Point c = new Point(0, 3, 0);
