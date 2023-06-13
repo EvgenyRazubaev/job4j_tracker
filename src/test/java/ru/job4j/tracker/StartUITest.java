@@ -34,7 +34,7 @@ public class StartUITest {
     }
 
     @Test
-    public void FindAllActionTestOutputIsSuccessfully() {
+    public void findAllActionTestOutputIsSuccessfully() {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
         Item one = tracker.add(new Item("test1"));
@@ -61,7 +61,7 @@ public class StartUITest {
     }
 
     @Test
-    public void FindByNameTestOutputIsSuccessfully() {
+    public void findByNameTestOutputIsSuccessfully() {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
         Item one = tracker.add(new Item("test1"));
@@ -88,7 +88,7 @@ public class StartUITest {
     }
 
     @Test
-    public void FindByIDTestOutputIsSuccessfully() {
+    public void findByIdTestOutputIsSuccessfully() {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
         Item one = tracker.add(new Item("test1"));
@@ -113,7 +113,6 @@ public class StartUITest {
                         + "=== Exit Program ===" + ln
         );
     }
-
 
     @Test
     public void whenExit() {
