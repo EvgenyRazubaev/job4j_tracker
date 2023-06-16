@@ -7,10 +7,10 @@ public class UserStore {
         for (User user : users) {
             if (login.equals(user.getUsername())) {
                 temp = user;
-                break;
-            } else {
-                throw new UserNotFoundException("Пользователь не найден");
             }
+        }
+        if (temp == null) {
+            throw new UserNotFoundException("Пользователь не найден");
         }
         return temp;
     }
