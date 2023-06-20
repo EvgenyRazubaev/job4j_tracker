@@ -1,7 +1,7 @@
 package ru.job4j.tracker;
 
 public final class SingleTracker {
-    public static Tracker instance = null;
+    private static Tracker instance = null;
     private Tracker tracker = new Tracker();
 
     public static Tracker getInstance() {
