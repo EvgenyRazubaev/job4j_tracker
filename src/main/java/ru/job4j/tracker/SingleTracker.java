@@ -4,6 +4,9 @@ public final class SingleTracker {
     private static SingleTracker instance = null;
     private Tracker tracker = new Tracker();
 
+    private SingleTracker() {
+    }
+
     public static SingleTracker getInstance() {
         if (instance == null) {
             instance = new SingleTracker();
